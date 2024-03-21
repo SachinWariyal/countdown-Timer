@@ -1,0 +1,39 @@
+.countdown {
+    color: white;
+  }
+  
+  .timer-container {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .real-timer {
+    height: 12vh;
+    /* width: 20vw; */
+    width: calc(50% - 10px); /* Adjust width for two items per row with gap */
+    margin-top: 10px;
+    background: linear-gradient(to top right, rgb(250, 52, 224), rgb(51, 159, 248));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .timer-container {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      flex-wrap: wrap;
+    }
+  
+    .real-timer {
+        width: calc(50% - 10px); /* Adjust width for two items per row with gap */
+    }
+  }
